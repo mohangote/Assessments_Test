@@ -1,0 +1,52 @@
+<% title "Assessmentform" %>
+
+<p>
+  <strong>Subject:</strong>
+  <%=h @assessmentform.subject_id %>
+</p>
+<p>
+  <strong>First Name:</strong>
+  <%=h @assessmentform.first_name %>
+</p>
+<p>
+  <strong>Last Name:</strong>
+  <%=h @assessmentform.last_name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%=h @assessmentform.email %>
+</p>
+<p>
+  <strong>Phone:</strong>
+  <%=h @assessmentform.phone %>
+</p>
+<p>
+  <strong>Address 1:</strong>
+  <%=h @assessmentform.address_1 %>
+</p>
+<p>
+  <strong>Address 2:</strong>
+  <%=h @assessmentform.address_2 %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%=h @assessmentform.city %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%=h @assessmentform.state %>
+</p>
+<p>
+  <strong>Zip Code:</strong>
+  <%=h @assessmentform.zip_code %>
+</p>
+<p>
+  <strong>Comments:</strong>
+  <%=h @assessmentform.comments %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_assessmentform_path(@assessmentform) %> |
+  <%= link_to "Destroy", @assessmentform, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", assessmentforms_path %>
+</p>

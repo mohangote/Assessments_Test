@@ -1,0 +1,28 @@
+<% title "Assessmentforms" %>
+
+<table id="listTable">
+  <tr>
+    <th>Subject</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+		<th colspan="2">Actions</th>
+  </tr>
+  <% for assessmentform in @assessmentforms %>
+    <tr id="<%="#{assessmentform.id}"%>" >
+      <td><%=h assessmentform.subject.name %></td>
+      <td><%=h assessmentform.first_name %></td>
+      <td><%=h assessmentform.last_name %></td>
+      <td><%=h assessmentform.email %></td>
+      <td><%=h assessmentform.phone %></td>
+ 
+     <!--> <td><%= link_to "Show", assessmentform %></td>-->
+      <td><%= link_to "Edit", edit_assessmentform_path(assessmentform) %></td>
+      <td><%= link_to "Destroy", assessmentform, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Assessmentform", new_assessmentform_path %></p>

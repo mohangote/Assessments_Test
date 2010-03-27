@@ -1,0 +1,16 @@
+#listTable{
+	border:2px solid #000000;
+	background-color:#EEEEEE;
+	width:100%;
+	text-align:center;
+}
+#listTable tr{
+	border:1px solid #666666;
+	
+}
+.odd{
+	background-color:#FFFFFF;
+}
+.even{
+	background-color:#CCCCCC;
+}

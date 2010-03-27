@@ -1,0 +1,17 @@
+<% semantic_form_for @assessmentform do |f| %>		
+<% f.inputs do %>
+	<%=f.input :subject, :include_blank=>false, :label=>"Select Subject" %>
+	<%=f.input :first_name %>
+	<%=f.input :last_name	%>
+	<%=f.input :phone	%>
+	<%=f.input :email	%>
+	<%=f.input :address_1	%>
+	<%=f.input :address_2	%>
+	<%=f.input :city	%>
+	<%=f.input :state, :as => :select, :include_blank => false, :collection =>  ['AK',	'AL',	'AR',	'AZ',	'CA',	'CO',	'CT',	'DC',	'DE',	'FL',	'GA',	'HI',	'IA',	'ID',	'IL',	'IN',	'KS',	'KY',	'LA',	'MA',	'MD',	'ME',	'MI','MN',	'MO',	'MS',	'MT',	'NC',	'ND',	'NE',	'NH',	'NJ',	'NM',	'NV',	'NY',	'OH',	'OK',	'OR',	'PA',	'RI',	'SC',	'SD',	'TN',	'TX',	'UT',	'VA',	'VT',	'WA',	'WI','WV',	'WY'] %>
+	<%=f.input :zip_code	%>
+	<%=f.input :comments	%>
+	 
+<% end %>
+ <%= f.buttons %>
+<% end %>
