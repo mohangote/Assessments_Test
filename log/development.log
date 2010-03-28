@@ -4966,3 +4966,41 @@ Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-27 01:02:52)
 Rendering template within layouts/application
 Rendering assessmentforms/show
 Completed in 65ms (View: 11, DB: 49) | 200 OK [http://localhost/assessmentforms/5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 07:52:46) [GET]
+  [4;36;1mAssessmentform Load (3.6ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (10.2ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (1.2ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 279ms (View: 234, DB: 20) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 07:52:50) [GET]
+  [4;36;1mAssessmentform Columns (3.5ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (1.1ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (8.7ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (38.6ms)
+Completed in 113ms (View: 93, DB: 13) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2010-03-28 07:52:59) [GET]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+Rendering template within layouts/application
+Rendering subjects/index
+  [4;36;1mSubject Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Completed in 33ms (View: 26, DB: 3) | 200 OK [http://localhost/subjects]
