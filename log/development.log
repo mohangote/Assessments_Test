@@ -5004,3 +5004,282 @@ Rendering template within layouts/application
 Rendering subjects/index
   [4;36;1mSubject Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
 Completed in 33ms (View: 26, DB: 3) | 200 OK [http://localhost/subjects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2010-03-28 19:09:16) [GET]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+Rendering template within layouts/application
+Rendering subjects/index
+  [4;36;1mSubject Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Completed in 12ms (View: 6, DB: 3) | 200 OK [http://localhost/subjects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SubjectsController#index (for 127.0.0.1 at 2010-03-28 19:09:24) [GET]
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+Rendering template within layouts/application
+Rendering subjects/index
+  [4;36;1mSubject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Completed in 13ms (View: 6, DB: 3) | 200 OK [http://localhost/subjects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:37:04) [GET]
+  [4;36;1mAssessmentform Load (0.4ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 144ms (View: 115, DB: 5) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#edit (for 127.0.0.1 at 2010-03-28 19:37:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (47.8ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/edit
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (24.8ms)
+Completed in 90ms (View: 33, DB: 51) | 200 OK [http://localhost/assessmentforms/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#update (for 127.0.0.1 at 2010-03-28 19:37:30) [PUT]
+  Parameters: {"commit"=>"Update Assessmentform", "authenticity_token"=>"QRYQ5eTAXT5vDb4BsmlOelSWlvAF0xAbPlp3sSwYKzI=", "id"=>"1", "assessmentform"=>{"city"=>"Westwood", "comments"=>"Nice comments", "zip_code"=>"07675", "subject_id"=>"1", "address_1"=>"2 High Street Apt B", "address_2"=>"2 High Street Apt B", "phone"=>"7329107261", "last_name"=>"gote", "state"=>"NJ", "email"=>"mohan@atcs.com", "first_name"=>"mohan"}}
+  [4;36;1mAssessmentform Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (45.7ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Update (0.4ms)[0m   [0mUPDATE `assessmentforms` SET `phone` = '7329107261', `updated_at` = '2010-03-28 23:37:30', `email` = 'mohan@atcs.com' WHERE `id` = 1[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/assessmentforms/1
+Completed in 59ms (DB: 49) | 302 Found [http://localhost/assessmentforms/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 19:37:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (1.3ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 66ms (View: 10, DB: 3) | 200 OK [http://localhost/assessmentforms/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:37:32) [GET]
+  [4;35;1mAssessmentform Load (0.3ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (48.1ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 79ms (View: 25, DB: 51) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 19:39:29) [GET]
+  [4;36;1mAssessmentform Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (76.7ms)
+Completed in 153ms (View: 92, DB: 4) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 19:39:36) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"QRYQ5eTAXT5vDb4BsmlOelSWlvAF0xAbPlp3sSwYKzI=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"", "last_name"=>"", "state"=>"AK", "email"=>"", "first_name"=>""}}
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSQL (42.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (30.1ms)
+Completed in 84ms (View: 30, DB: 47) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 19:40:04) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"QRYQ5eTAXT5vDb4BsmlOelSWlvAF0xAbPlp3sSwYKzI=", "assessmentform"=>{"city"=>"", "comments"=>"perfect", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8608608600", "last_name"=>"Kulkarni", "state"=>"AK", "email"=>"mohan@atcs.com", "first_name"=>"Atharva"}}
+  [4;36;1mAssessmentform Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSQL (49.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mAssessmentform Create (0.3ms)[0m   [0;1mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-28 23:40:04', '', 'perfect', '2010-03-28 23:40:04', 1, '', 'Kulkarni', '8608608600', '', 'Atharva', 'mohan@atcs.com', 'AK')[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCOMMIT[0m
+Sent mail to mohan@atcs.com
+
+Date: Sun, 28 Mar 2010 19:40:04 -0400
+From: "ATCS Inc." <info@upgradeitskills.com>
+To: mohan@atcs.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Atharva
+ Thank you for registering to take ATCS Inc's skills assessment quiz. A link will be sent to you shortly for 	the same.
+
+At ATCS Inc, we want you to reach a greater level in the skills you want to learn. The test is an objective measure of your current skills and determines whether you will be able to meet your goals by attending this training with your current skill set. If we determine that you need additional preparation or training in order to gain the most value from this class, we will tell you so right away. We will also recommend cost-effective solutions that you can use to get ready for the training. The assessment is for your benefit. It is best taken without any preparation or reference materials, so your skills can be objectively measured. Once you complete the assessment quiz, we will be contacting you to discuss your test results. 
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/6
+Completed in 1012ms (DB: 53) | 302 Found [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 19:40:05) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAssessmentform Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (1.1ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 17ms (View: 9, DB: 3) | 200 OK [http://localhost/assessmentforms/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#edit (for 127.0.0.1 at 2010-03-28 19:40:44) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAssessmentform Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (44.8ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/edit
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (77.4ms)
+Completed in 150ms (View: 94, DB: 49) | 200 OK [http://localhost/assessmentforms/6/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#update (for 127.0.0.1 at 2010-03-28 19:40:54) [PUT]
+  Parameters: {"commit"=>"Update Assessmentform", "authenticity_token"=>"QRYQ5eTAXT5vDb4BsmlOelSWlvAF0xAbPlp3sSwYKzI=", "id"=>"6", "assessmentform"=>{"city"=>"", "comments"=>"perfect", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8608608600", "last_name"=>"Good Boy", "state"=>"AK", "email"=>"mohan@atcs.com", "first_name"=>"Atharva "}}
+  [4;36;1mAssessmentform Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (1.4ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Update (0.2ms)[0m   [0mUPDATE `assessmentforms` SET `updated_at` = '2010-03-28 23:40:54', `last_name` = 'Good Boy', `first_name` = 'Atharva ' WHERE `id` = 6[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Sent mail to mohan@atcs.com
+
+Date: Sun, 28 Mar 2010 19:40:54 -0400
+From: "ATCS Inc." <info@upgradeitskills.com>
+To: mohan@atcs.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Atharva 
+ Thank you for registering to take ATCS Inc's skills assessment quiz. A link will be sent to you shortly for 	the same.
+
+At ATCS Inc, we want you to reach a greater level in the skills you want to learn. The test is an objective measure of your current skills and determines whether you will be able to meet your goals by attending this training with your current skill set. If we determine that you need additional preparation or training in order to gain the most value from this class, we will tell you so right away. We will also recommend cost-effective solutions that you can use to get ready for the training. The assessment is for your benefit. It is best taken without any preparation or reference materials, so your skills can be objectively measured. Once you complete the assessment quiz, we will be contacting you to discuss your test results. 
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/6
+Completed in 710ms (DB: 5) | 302 Found [http://localhost/assessmentforms/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 19:40:55) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mAssessmentform Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (1.8ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 18ms (View: 10, DB: 4) | 200 OK [http://localhost/assessmentforms/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#edit (for 127.0.0.1 at 2010-03-28 19:41:10) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (1.3ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/edit
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (20.3ms)
+Completed in 31ms (View: 21, DB: 5) | 200 OK [http://localhost/assessmentforms/6/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#update (for 127.0.0.1 at 2010-03-28 19:41:18) [PUT]
+  Parameters: {"commit"=>"Update Assessmentform", "authenticity_token"=>"QRYQ5eTAXT5vDb4BsmlOelSWlvAF0xAbPlp3sSwYKzI=", "id"=>"6", "assessmentform"=>{"city"=>"", "comments"=>"perfect", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8608608600", "last_name"=>"Good Boy", "state"=>"AK", "email"=>"mohan.gote@gmail.com", "first_name"=>"Atharva "}}
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (46.1ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mAssessmentform Update (0.3ms)[0m   [0;1mUPDATE `assessmentforms` SET `updated_at` = '2010-03-28 23:41:18', `email` = 'mohan.gote@gmail.com' WHERE `id` = 6[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Sent mail to mohan.gote@gmail.com
+
+Date: Sun, 28 Mar 2010 19:41:18 -0400
+From: "ATCS Inc." <info@upgradeitskills.com>
+To: mohan.gote@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Atharva 
+ Thank you for registering to take ATCS Inc's skills assessment quiz. A link will be sent to you shortly for 	the same.
+
+At ATCS Inc, we want you to reach a greater level in the skills you want to learn. The test is an objective measure of your current skills and determines whether you will be able to meet your goals by attending this training with your current skill set. If we determine that you need additional preparation or training in order to gain the most value from this class, we will tell you so right away. We will also recommend cost-effective solutions that you can use to get ready for the training. The assessment is for your benefit. It is best taken without any preparation or reference materials, so your skills can be objectively measured. Once you complete the assessment quiz, we will be contacting you to discuss your test results. 
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/6
+Completed in 1028ms (DB: 50) | 302 Found [http://localhost/assessmentforms/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 19:41:19) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAssessmentform Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (1.7ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 14ms (View: 6, DB: 3) | 200 OK [http://localhost/assessmentforms/6]

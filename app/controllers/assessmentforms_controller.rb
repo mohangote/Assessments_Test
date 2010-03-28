@@ -30,6 +30,7 @@ class AssessmentformsController < ApplicationController
     @assessmentform = Assessmentform.find(params[:id])
     if @assessmentform.update_attributes(params[:assessmentform])
       flash[:notice] = "Successfully updated assessmentform."
+      UserMailer.deliver_registration_confirmation(@assessmentform)
       redirect_to @assessmentform
     else
       render :action => 'edit'
