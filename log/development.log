@@ -5283,3 +5283,1355 @@ Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 19:41:19)
 Rendering template within layouts/application
 Rendering assessmentforms/show
 Completed in 14ms (View: 6, DB: 3) | 200 OK [http://localhost/assessmentforms/6]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:47:12) [GET]
+  [4;36;1mAssessmentform Load (0.4ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (0.5ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 99ms (View: 88, DB: 5) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:47:16) [GET]
+  [4;35;1mAssessmentform Load (0.4ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (47.2ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 83ms (View: 27, DB: 51) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#destroy (for 127.0.0.1 at 2010-03-28 19:47:19) [DELETE]
+  Parameters: {"authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "id"=>"6"}
+  [4;36;1mAssessmentform Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (43.2ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 6) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Destroy (0.3ms)[0m   [0mDELETE FROM `assessmentforms` WHERE `id` = 6[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/assessmentforms
+Completed in 56ms (DB: 47) | 302 Found [http://localhost/assessmentforms/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:47:20) [GET]
+  [4;35;1mAssessmentform Load (0.3ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (138.9ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 170ms (View: 24, DB: 142) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#destroy (for 127.0.0.1 at 2010-03-28 19:47:24) [DELETE]
+  Parameters: {"authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "id"=>"3"}
+  [4;35;1mAssessmentform Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (48.7ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 3) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mAssessmentform Destroy (0.2ms)[0m   [0;1mDELETE FROM `assessmentforms` WHERE `id` = 3[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/assessmentforms
+Completed in 59ms (DB: 52) | 302 Found [http://localhost/assessmentforms/3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:47:25) [GET]
+  [4;36;1mAssessmentform Load (0.3ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (0.8ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 26ms (View: 19, DB: 4) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#destroy (for 127.0.0.1 at 2010-03-28 19:47:29) [DELETE]
+  Parameters: {"authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "id"=>"5"}
+  [4;35;1mAssessmentform Columns (45.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (0.6ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mAssessmentform Destroy (0.2ms)[0m   [0;1mDELETE FROM `assessmentforms` WHERE `id` = 5[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/assessmentforms
+Completed in 116ms (DB: 47) | 302 Found [http://localhost/assessmentforms/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:47:30) [GET]
+  [4;36;1mAssessmentform Load (0.3ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (1.1ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 26ms (View: 17, DB: 5) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 19:47:32) [GET]
+  [4;36;1mAssessmentform Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (26.3ms)
+Completed in 86ms (View: 79, DB: 4) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 19:47:48) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"9999999999999", "last_name"=>"Wangi", "state"=>"AK", "email"=>"savita.wangi@gmail.com", "first_name"=>"Savita"}}
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Create (0.3ms)[0m   [0mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-28 23:47:48', '', '', '2010-03-28 23:47:48', 1, '', 'Wangi', '9999999999999', '', 'Savita', 'savita.wangi@gmail.com', 'AK')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+Sent mail to savita.wangi@gmail.com
+
+Date: Sun, 28 Mar 2010 19:47:48 -0400
+From: "ATCS Inc." <info@upgradeitskills.com>
+To: savita.wangi@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Savita
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for 	the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/7
+Completed in 718ms (DB: 3) | 302 Found [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 19:47:48) [GET]
+  Parameters: {"id"=>"7"}
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (1.8ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 19ms (View: 10, DB: 4) | 200 OK [http://localhost/assessmentforms/7]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 19:50:36) [GET]
+  [4;35;1mAssessmentform Load (0.7ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (225.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 253ms (View: 20, DB: 229) | 200 OK [http://localhost/assessmentforms/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 19:50:38) [GET]
+  [4;36;1mAssessmentform Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (40.5ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (62.6ms)
+Completed in 70ms (View: 23, DB: 44) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 19:50:50) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8888888888", "last_name"=>"User", "state"=>"AK", "email"=>"mohan.gote@gmail.com", "first_name"=>"New"}}
+  [4;35;1mAssessmentform Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Create (0.3ms)[0m   [0mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-28 23:50:50', '', '', '2010-03-28 23:50:50', 1, '', 'User', '8888888888', '', 'New', 'mohan.gote@gmail.com', 'AK')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to mohan.gote@gmail.com
+
+Date: Sun, 28 Mar 2010 19:50:50 -0400
+From: info@upgradeitskills.com
+To: mohan.gote@gmail.com
+Subject: Thank you for Registering
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi New
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for 	the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/8
+Completed in 724ms (DB: 4) | 302 Found [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 19:50:51) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mAssessmentform Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (1.7ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 8) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 14ms (View: 6, DB: 3) | 200 OK [http://localhost/assessmentforms/8]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#destroy (for 127.0.0.1 at 2010-03-28 20:31:18) [DELETE]
+  Parameters: {"authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "id"=>"8"}
+  [4;36;1mAssessmentform Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (55.8ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 8) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Destroy (0.3ms)[0m   [0mDELETE FROM `assessmentforms` WHERE `id` = 8[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/assessmentforms
+Completed in 77ms (DB: 59) | 302 Found [http://localhost/assessmentforms/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:31:18) [GET]
+  [4;35;1mAssessmentform Load (0.4ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (0.9ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 41ms (View: 32, DB: 5) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:31:21) [GET]
+  [4;36;1mAssessmentform Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (26.1ms)
+Completed in 92ms (View: 83, DB: 4) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:31:40) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"00000000000", "last_name"=>"Gote", "state"=>"AK", "email"=>"mohan.gote@gmail.com", "first_name"=>"Mohan"}}
+  [4;35;1mAssessmentform Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Create (0.4ms)[0m   [0mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-29 00:31:40', '', '', '2010-03-29 00:31:40', 1, '', 'Gote', '00000000000', '', 'Mohan', 'mohan.gote@gmail.com', 'AK')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Sent mail to mohan.gote@gmail.com
+
+Date: Sun, 28 Mar 2010 20:31:40 -0400
+From: "ATCS Inc." <info@upgradeitskills.com>
+To: mohan.gote@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Mohan
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for 	the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/9
+Completed in 720ms (DB: 5) | 302 Found [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 20:31:41) [GET]
+  Parameters: {"id"=>"9"}
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (1.7ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 19ms (View: 11, DB: 4) | 200 OK [http://localhost/assessmentforms/9]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:32:45) [GET]
+  [4;35;1mAssessmentform Load (0.5ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (1.1ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 30ms (View: 21, DB: 5) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:32:47) [GET]
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (42.3ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (65.2ms)
+Completed in 73ms (View: 24, DB: 46) | 200 OK [http://localhost/assessmentforms/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:33:03) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8888888888", "last_name"=>"Gote", "state"=>"AK", "email"=>"mohan.gote@gmail.com", "first_name"=>"Mohan"}}
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mAssessmentform Create (0.3ms)[0m   [0;1mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-29 00:33:03', '', '', '2010-03-29 00:33:03', 1, '', 'Gote', '8888888888', '', 'Mohan', 'mohan.gote@gmail.com', 'AK')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Sent mail to mohan.gote@gmail.com
+
+Date: Sun, 28 Mar 2010 20:33:03 -0400
+From: "ATCS Inc." <info@upgradeitskills.com>
+To: mohan.gote@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Mohan
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/10
+Completed in 1018ms (DB: 5) | 302 Found [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 20:33:04) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mAssessmentform Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (51.5ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 67ms (View: 7, DB: 55) | 200 OK [http://localhost/assessmentforms/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:33:34) [GET]
+  [4;36;1mAssessmentform Load (0.4ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (49.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (0.6ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 81ms (View: 25, DB: 52) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:37:38) [GET]
+  [4;36;1mAssessmentform Load (0.4ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (0.4ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 144ms (View: 133, DB: 5) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:37:40) [GET]
+  [4;35;1mAssessmentform Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (25.9ms)
+Completed in 81ms (View: 73, DB: 4) | 200 OK [http://localhost/assessmentforms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:37:53) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8888888888", "last_name"=>"Gote", "state"=>"AK", "email"=>"mohan.gote@gmail.com", "first_name"=>"Mohan"}}
+  [4;36;1mAssessmentform Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mAssessmentform Create (0.4ms)[0m   [0;1mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-29 00:37:53', '', '', '2010-03-29 00:37:53', 1, '', 'Gote', '8888888888', '', 'Mohan', 'mohan.gote@gmail.com', 'AK')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Sent mail to mohan.gote@gmail.com
+
+Date: Sun, 28 Mar 2010 20:37:53 -0400
+From: info@upgradeitskills.com
+To: mohan.gote@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Mohan
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/11
+Completed in 1471ms (DB: 5) | 302 Found [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 20:37:55) [GET]
+  Parameters: {"id"=>"11"}
+  [4;36;1mAssessmentform Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mAssessmentform Load (44.5ms)[0m   [0mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 65ms (View: 11, DB: 46) | 200 OK [http://localhost/assessmentforms/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:39:14) [GET]
+  [4;36;1mAssessmentform Load (0.4ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 100ms (View: 89, DB: 4) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:39:16) [GET]
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (41.7ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (69.3ms)
+Completed in 83ms (View: 34, DB: 45) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:39:28) [POST]
+  Parameters: {"commit"=>"Create Assessmentform", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8888888888", "last_name"=>"Gote", "state"=>"AK", "email"=>"mohan.gote@gmail.com", "first_name"=>"Mohan"}}
+  [4;35;1mAssessmentform Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Create (0.3ms)[0m   [0mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-29 00:39:28', '', '', '2010-03-29 00:39:28', 1, '', 'Gote', '8888888888', '', 'Mohan', 'mohan.gote@gmail.com', 'AK')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to mohan.gote@gmail.com
+
+Date: Sun, 28 Mar 2010 20:39:28 -0400
+From: uupgradeitskills@gmail.com
+To: mohan.gote@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Mohan
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/12
+Completed in 1005ms (DB: 4) | 302 Found [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 20:39:29) [GET]
+  Parameters: {"id"=>"12"}
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (64.3ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 12) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 83ms (View: 12, DB: 66) | 200 OK [http://localhost/assessmentforms/12]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:39:51) [GET]
+  [4;35;1mAssessmentform Load (0.4ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (47.2ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (0.8ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 87ms (View: 33, DB: 51) | 200 OK [http://localhost/assessmentforms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:41:07) [GET]
+  [4;36;1mAssessmentform Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (22.2ms)
+Completed in 80ms (View: 72, DB: 4) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:41:24) [GET]
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+ERROR: compiling _run_erb_app47views47assessmentforms47_form46html46erb_locals_form_object RAISED compile error
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:11: syntax error, unexpected ','
+...ct, :include_blank => false, ,	:required=>false, :collection...
+                              ^
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:11: Can't assign to false
+... => false, ,	:required=>false, :collection =>  ['', 'AK',	'A...
+            	                 ^
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:11: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+...equired=>false, :collection =>  ['', 'AK',	'AL',	'AR',	'AZ',...
+                              ^
+Function body:           def _run_erb_app47views47assessmentforms47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  semantic_form_for @assessmentform do |f| ; @output_buffer.concat "\t\t\n"
+;  f.inputs do ; @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :subject, :include_blank=>false, :label=>"Select Subject" ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :first_name ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :last_name	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :phone	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :email	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :address_1,	:required=>false).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :address_2,	:required=>false ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :city,	:required=>false	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :state, :as => :select, :include_blank => false, ,	:required=>false, :collection =>  ['', 'AK',	'AL',	'AR',	'AZ',	'CA',	'CO',	'CT',	'DC',	'DE',	'FL',	'GA',	'HI',	'IA',	'ID',	'IL',	'IN',	'KS',	'KY',	'LA',	'MA',	'MD',	'ME',	'MI','MN',	'MO',	'MS',	'MT',	'NC',	'ND',	'NE',	'NH',	'NJ',	'NM',	'NV',	'NY',	'OH',	'OK',	'OR',	'PA',	'RI',	'SC',	'SD',	'TN',	'TX',	'UT',	'VA',	'VT',	'WA',	'WI','WV',	'WY'] ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :zip_code,	:required=>false	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :comments,	:required=>false	).to_s); @output_buffer.concat "\n\t \n"
+
+;  end ; @output_buffer.concat "\n "
+; @output_buffer.concat(( f.buttons ).to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:21:in `compile!'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/new.html.erb:3:in `_run_erb_app47views47assessmentforms47new46html46erb'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/commands/server.rb:111
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:11: syntax error, unexpected ','
+...ct, :include_blank => false, ,	:required=>false, :collection...
+                              ^
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:11: Can't assign to false
+... => false, ,	:required=>false, :collection =>  ['', 'AK',	'A...
+            	                 ^
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:11: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+...equired=>false, :collection =>  ['', 'AK',	'AL',	'AR',	'AZ',...
+                              ^) on line #11 of app/views/assessmentforms/_form.html.erb:
+8: 	<%=f.input :address_1,	:required=>false%>
+9: 	<%=f.input :address_2,	:required=>false %>
+10: 	<%=f.input :city,	:required=>false	%>
+11: 	<%=f.input :state, :as => :select, :include_blank => false, ,	:required=>false, :collection =>  ['', 'AK',	'AL',	'AR',	'AZ',	'CA',	'CO',	'CT',	'DC',	'DE',	'FL',	'GA',	'HI',	'IA',	'ID',	'IL',	'IN',	'KS',	'KY',	'LA',	'MA',	'MD',	'ME',	'MI','MN',	'MO',	'MS',	'MT',	'NC',	'ND',	'NE',	'NH',	'NJ',	'NM',	'NV',	'NY',	'OH',	'OK',	'OR',	'PA',	'RI',	'SC',	'SD',	'TN',	'TX',	'UT',	'VA',	'VT',	'WA',	'WI','WV',	'WY'] %>
+12: 	<%=f.input :zip_code,	:required=>false	%>
+13: 	<%=f.input :comments,	:required=>false	%>
+14: 	 
+
+    app/views/assessmentforms/_form.html.erb:21:in `compile!'
+    app/views/assessmentforms/new.html.erb:3
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:41:36) [GET]
+  [4;36;1mAssessmentform Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (21.5ms)
+Completed in 83ms (View: 26, DB: 4) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:43:17) [GET]
+  [4;35;1mAssessmentform Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (119.5ms)
+Completed in 132ms (View: 125, DB: 4) | 200 OK [http://localhost/assessmentforms/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:43:33) [GET]
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (42.1ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (64.4ms)
+Completed in 75ms (View: 26, DB: 46) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:44:05) [GET]
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (40.1ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (120.7ms)
+Completed in 132ms (View: 84, DB: 44) | 200 OK [http://localhost/assessmentforms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:45:19) [GET]
+  [4;36;1mAssessmentform Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+ERROR: compiling _run_erb_app47views47assessmentforms47_form46html46erb_locals_form_object RAISED compile error
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:16: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+....concat(( f.buttons, :label => 'Submit').to_s); @output_buff...
+                              ^
+Function body:           def _run_erb_app47views47assessmentforms47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  semantic_form_for @assessmentform do |f| ; @output_buffer.concat "\t\t\n"
+;  f.inputs do ; @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :subject, :include_blank=>false, :label=>"Select Subject" ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :first_name ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :last_name	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :phone	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :email	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :address_1,	:required=>false).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :address_2,	:required=>false ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :city,	:required=>false	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :state, :as => :select,	:required=>false, :collection =>  ['', 'AK',	'AL',	'AR',	'AZ',	'CA',	'CO',	'CT',	'DC',	'DE',	'FL',	'GA',	'HI',	'IA',	'ID',	'IL',	'IN',	'KS',	'KY',	'LA',	'MA',	'MD',	'ME',	'MI','MN',	'MO',	'MS',	'MT',	'NC',	'ND',	'NE',	'NH',	'NJ',	'NM',	'NV',	'NY',	'OH',	'OK',	'OR',	'PA',	'RI',	'SC',	'SD',	'TN',	'TX',	'UT',	'VA',	'VT',	'WA',	'WI','WV',	'WY'] ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :zip_code,	:required=>false	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :comments,	:required=>false	).to_s); @output_buffer.concat "\n\t \n"
+
+;  end ; @output_buffer.concat "\n "
+; @output_buffer.concat(( f.buttons, :label => 'Submit').to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:21:in `compile!'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/new.html.erb:6:in `_run_erb_app47views47assessmentforms47new46html46erb'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/commands/server.rb:111
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:16: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+....concat(( f.buttons, :label => 'Submit').to_s); @output_buff...
+                              ^) on line #16 of app/views/assessmentforms/_form.html.erb:
+13: 	<%=f.input :comments,	:required=>false	%>
+14: 	 
+15: <% end %>
+16:  <%= f.buttons, :label => 'Submit'%>
+17: <% end %>
+
+    app/views/assessmentforms/_form.html.erb:21:in `compile!'
+    app/views/assessmentforms/new.html.erb:6
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:45:46) [GET]
+  [4;35;1mAssessmentform Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+ERROR: compiling _run_erb_app47views47assessmentforms47_form46html46erb_locals_form_object RAISED compile error
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:16: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+....concat(( f.buttons, :label => "Submit").to_s); @output_buff...
+                              ^
+Function body:           def _run_erb_app47views47assessmentforms47_form46html46erb_locals_form_object(local_assigns)
+            old_output_buffer = output_buffer;object = local_assigns[:object];form = local_assigns[:form];;@output_buffer = '';  __in_erb_template=true ;  semantic_form_for @assessmentform do |f| ; @output_buffer.concat "\t\t\n"
+;  f.inputs do ; @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :subject, :include_blank=>false, :label=>"Select Subject" ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :first_name ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :last_name	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :phone	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :email	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :address_1,	:required=>false).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :address_2,	:required=>false ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :city,	:required=>false	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :state, :as => :select,	:required=>false, :collection =>  ['', 'AK',	'AL',	'AR',	'AZ',	'CA',	'CO',	'CT',	'DC',	'DE',	'FL',	'GA',	'HI',	'IA',	'ID',	'IL',	'IN',	'KS',	'KY',	'LA',	'MA',	'MD',	'ME',	'MI','MN',	'MO',	'MS',	'MT',	'NC',	'ND',	'NE',	'NH',	'NJ',	'NM',	'NV',	'NY',	'OH',	'OK',	'OR',	'PA',	'RI',	'SC',	'SD',	'TN',	'TX',	'UT',	'VA',	'VT',	'WA',	'WI','WV',	'WY'] ).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :zip_code,	:required=>false	).to_s); @output_buffer.concat "\n\t"
+; @output_buffer.concat((f.input :comments,	:required=>false	).to_s); @output_buffer.concat "\n\t \n"
+
+;  end ; @output_buffer.concat "\n "
+; @output_buffer.concat(( f.buttons, :label => "Submit").to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:21:in `compile!'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render'
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/new.html.erb:6:in `_run_erb_app47views47assessmentforms47new46html46erb'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/Users/mohangote/.rvm/gems/ruby-1.8.7-p249/gems/rails-2.3.5/lib/commands/server.rb:111
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/mohangote/Documents/projects/formtastic_test/app/views/assessmentforms/_form.html.erb:16: syntax error, unexpected tASSOC, expecting tCOLON2 or '[' or '.'
+....concat(( f.buttons, :label => "Submit").to_s); @output_buff...
+                              ^) on line #16 of app/views/assessmentforms/_form.html.erb:
+13: 	<%=f.input :comments,	:required=>false	%>
+14: 	 
+15: <% end %>
+16:  <%= f.buttons, :label => "Submit"%>
+17: <% end %>
+
+    app/views/assessmentforms/_form.html.erb:21:in `compile!'
+    app/views/assessmentforms/new.html.erb:6
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:46:14) [GET]
+  [4;36;1mAssessmentform Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (37.1ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (59.1ms)
+Completed in 69ms (View: 25, DB: 41) | 200 OK [http://localhost/assessmentforms/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:47:37) [GET]
+  [4;35;1mAssessmentform Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (36.5ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+
+ActionView::TemplateError (undefined method `button' for #<Formtastic::SemanticFormBuilder:0x103924510>) on line #17 of app/views/assessmentforms/_form.html.erb:
+14: 	 
+15: <% end %>
+16:  <% f.buttons do %>
+17: 	<%=f.button	:label=>"Submit"	%>
+18:  <% end%>
+19: 
+20: <% end %>
+
+    app/views/assessmentforms/_form.html.erb:17
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1204:in `field_set_and_list_wrapping'
+    formtastic (0.9.7) rails/./lib/formtastic.rb:285:in `buttons'
+    app/views/assessmentforms/_form.html.erb:16
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1650:in `semantic_form_for'
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1609:in `with_custom_field_error_proc'
+    formtastic (0.9.7) rails/./lib/formtastic.rb:1649:in `semantic_form_for'
+    app/views/assessmentforms/_form.html.erb:1
+    app/views/assessmentforms/new.html.erb:6
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/mohangote/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (116.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:50:49) [GET]
+  [4;36;1mAssessmentform Load (0.4ms)[0m   [0;1mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;35;1mAssessmentform Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSubject Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+  [4;35;1mSubject Load (1.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 37ms (View: 28, DB: 5) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:50:51) [GET]
+  [4;35;1mAssessmentform Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (34.7ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (56.3ms)
+Completed in 67ms (View: 25, DB: 38) | 200 OK [http://localhost/assessmentforms/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:50:58) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"", "last_name"=>"", "state"=>"", "email"=>"", "first_name"=>""}}
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSQL (48.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (0.9ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (31.1ms)
+Completed in 91ms (View: 31, DB: 53) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:51:13) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8888888888", "last_name"=>"Gote", "state"=>"", "email"=>"mohan.gote@gmail.com", "first_name"=>"Mohan"}}
+  [4;35;1mAssessmentform Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Create (0.3ms)[0m   [0mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-29 00:51:13', '', '', '2010-03-29 00:51:13', 1, '', 'Gote', '8888888888', '', 'Mohan', 'mohan.gote@gmail.com', '')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Sent mail to mohan.gote@gmail.com
+
+Date: Sun, 28 Mar 2010 20:51:13 -0400
+From: uupgradeitskills@gmail.com
+To: mohan.gote@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Mohan
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/13
+Completed in 981ms (DB: 5) | 302 Found [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 20:51:14) [GET]
+  Parameters: {"id"=>"13"}
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (53.1ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 13) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 71ms (View: 11, DB: 55) | 200 OK [http://localhost/assessmentforms/13]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:52:57) [GET]
+  [4;35;1mAssessmentform Load (0.3ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (48.8ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (0.6ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 92ms (View: 37, DB: 52) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#new (for 127.0.0.1 at 2010-03-28 20:53:00) [GET]
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;36;1mSubject Load (48.4ms)[0m   [0;1mSELECT * FROM `subjects` [0m
+  [4;35;1mSubject Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (127.2ms)
+Completed in 135ms (View: 80, DB: 52) | 200 OK [http://localhost/assessmentforms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:53:05) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"", "last_name"=>"", "state"=>"", "email"=>"", "first_name"=>""}}
+  [4;36;1mAssessmentform Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSQL (41.7ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering assessmentforms/new
+  [4;35;1mSubject Load (0.3ms)[0m   [0mSELECT * FROM `subjects` [0m
+  [4;36;1mSubject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `subjects`[0m
+Rendered assessmentforms/_form (28.6ms)
+Completed in 82ms (View: 29, DB: 45) | 200 OK [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#create (for 127.0.0.1 at 2010-03-28 20:53:17) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"X4VaketI21z9pgX1LC57ifL252fIxYjs7yx+UWxKMjU=", "assessmentform"=>{"city"=>"", "comments"=>"", "zip_code"=>"", "subject_id"=>"1", "address_1"=>"", "address_2"=>"", "phone"=>"8888888888", "last_name"=>"Gote", "state"=>"", "email"=>"mgflexas@gmail.com", "first_name"=>"Mohan"}}
+  [4;35;1mAssessmentform Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mAssessmentform Create (0.3ms)[0m   [0mINSERT INTO `assessmentforms` (`city`, `created_at`, `zip_code`, `comments`, `updated_at`, `subject_id`, `address_1`, `last_name`, `phone`, `address_2`, `first_name`, `email`, `state`) VALUES('', '2010-03-29 00:53:17', '', '', '2010-03-29 00:53:17', 1, '', 'Gote', '8888888888', '', 'Mohan', 'mgflexas@gmail.com', '')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Sent mail to mgflexas@gmail.com
+
+Date: Sun, 28 Mar 2010 20:53:17 -0400
+From: uupgradeitskills@gmail.com
+To: mgflexas@gmail.com
+Subject: Thank you for Registering for Free Assessment Test
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+Hi Mohan
+ Thank you for registering to take ATCS Inc skills assessment quiz. A link will be sent to you shortly for the same.
+
+We work our tests in such a way that your assessment gives you a right direction path. With the assessment and our skilled training advisors, the learners are consulted to a right direction for learning/training.
+
+Thank you and good luck!
+
+ATCS Inc. 
+http://www.upgradeITskills.com
+201-314-6629
+Redirected to http://localhost:3000/assessmentforms/14
+Completed in 736ms (DB: 5) | 302 Found [http://localhost/assessmentforms]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#show (for 127.0.0.1 at 2010-03-28 20:53:18) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mAssessmentform Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;36;1mAssessmentform Load (2.6ms)[0m   [0;1mSELECT * FROM `assessmentforms` WHERE (`assessmentforms`.`id` = 14) [0m
+Rendering template within layouts/application
+Rendering assessmentforms/show
+Completed in 21ms (View: 11, DB: 4) | 200 OK [http://localhost/assessmentforms/14]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AssessmentformsController#index (for 127.0.0.1 at 2010-03-28 20:53:24) [GET]
+  [4;35;1mAssessmentform Load (0.3ms)[0m   [0mSELECT * FROM `assessmentforms` [0m
+Rendering template within layouts/application
+Rendering assessmentforms/index
+  [4;36;1mAssessmentform Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `assessmentforms`[0m
+  [4;35;1mSubject Columns (50.4ms)[0m   [0mSHOW FIELDS FROM `subjects`[0m
+  [4;36;1mSubject Load (0.3ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `subjects` WHERE (`subjects`.`id` = 1) [0m
+Completed in 92ms (View: 36, DB: 53) | 200 OK [http://localhost/assessmentforms]
